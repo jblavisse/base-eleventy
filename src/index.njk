@@ -1,0 +1,26 @@
+---
+layout: layout.njk
+elements:
+    - Pizza
+    - Jambon
+    - Fromage
+---
+
+<img src="{{ 'img/truc.png' | url }}" alt="Truc">
+<ul>
+    {% for element in elements %}
+        <li>{{element}}</li>
+    {% endfor %}
+</ul>
+
+{% for tuto in tutos %}
+{{tuto.title}}
+{% endfor %}
+
+{% for service in collections.services %}
+    {{ service.data.title }}
+{% endfor %}
+
+{% for post in posts %}
+ {{post.title}}
+{% endfor %}

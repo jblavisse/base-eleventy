@@ -1,0 +1,11 @@
+---
+pagination:
+    data: tutos
+    size: 1
+    alias: tuto
+permalink: "tutoriels/{{ tuto.title | slug }}/"
+layout: layout.njk
+---
+
+<h2>Mon tuto {{tuto.title}}:</h2>
+<p>{{tuto.description}}</p>
